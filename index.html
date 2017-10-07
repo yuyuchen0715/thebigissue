@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="home.css">
+		<title>The big issue Taiwan | 大誌台灣</title>
+		<script src="jquery/jquery-1.10.2.min.js"></script>
+		<script src="jquery/jquery.cycle.all.js"></script>
+		<script src="jquery/jquery.scrollTo.min.js"></script>
+   		<script src="jquery/jquery.localScroll.min.js"></script>
+   	 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script>
+	/*css用分號 jq用.逗號*/
+		$(document).ready(function(){
+
+			/*雙引號又有需要雙引號時 直接改成單引號*/
+			$("#cycle").before("<div id='cycle_nav'>").cycle({
+				fx: "fade", 
+    			timeout:1200,
+    			speed:1000,
+    			pause:1,
+    			ramdom:1,
+    			pager:"#cycle_nav",
+			});
+			$("#go-top").hide();
+	        $(window).scroll(function(){
+    	        if($(this).scrollTop()>500){
+        	      $("#go-top").fadeIn();
+        	    }else{
+        	      $("#go-top").fadeOut();
+        	    }
+        	});
+	        $("#go-top").click(function(){
+           		$("html,body").animate({
+           		scrollTop:0
+            	},1000,"easeInOutBack");
+          	});
+          	$("img.lazy").lazyload();
+		})
+
+	</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.4&appId=1637362053178471";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	</head>
+	<body>
+		<div class="red"></div>
+		<div class="full-width" >
+			<div class="fix-width" id="header">
+				<div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">首頁</a></li>
+						<li><a href="about.html">關於大誌</a></li>
+						<li><a href="text.html">雜誌導覽</a></li>
+						<li><a href="magzine.html">雜誌訂閱</a></li>
+						<li><a href="cooperate.html">合作單位</a></li>
+						<li><a href="contact.html">聯絡我們</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div clsss="full-width">
+			<div class="fix-width" id="img-photo">
+				<div id="cycle">
+					<div class="photo1"><img src="images/01.jpg"></div>
+					<div class="photo2"><img src="images/02.jpg"></div>
+					<div class="photo3"><img src="images/03.jpg"></div>
+					<div class="photo4"><img src="images/04.jpg"></div>
+					<div class="photo5"><img src="images/05.jpg"></div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="fix-width">
+			<div class="fiv-width">
+				<div id="news">	
+					<div class="title-line">
+						<div class="title"><a href="text.html"target="_blank">最新消息</a></div>
+					</div>
+					<div class="news-item clearfix">
+						<div class="news-img">
+							<a href="article.html"target="_blank"><img src="images/w66-cover.jpg"></a>
+						</div>
+						<div class="news-text">
+							<div class="news-text01">
+								<p>THE BIG ISSUE 大誌雜誌 9月號 第 66 期出刊</p>
+							</div>
+							<div class="news-text02">
+								<p>人生不是電影，它比電影困難多了。—《新天堂樂園》</p>
+							</div>
+							<div class="news-text03">
+								<p>FEATURE
+								The Film </br>
+								電影。聶隱娘</br>
+								生活不可能像你想像得那麼好，</br>
+								但也不會像你想像得那麼糟。</br>
+								我覺得人的脆弱和堅強都超乎自己的想像。</br>
+								<a href="article.html" target="_blank">繼續閱讀</a>
+								</p>	
+							</div>
+						</div>
+					</div>
+					<div class="news-item ">
+						<div class="news-img">
+							<a href="article.html"target="_blank"><img src="images/w65-cover.jpg"></a>
+						</div>
+						<div class="news-text clearfix">
+							<div class="news-text01">
+								<p>THE BIG ISSUE 大誌雜誌 8月號 第 65 期出刊</p>
+							</div>
+							<div class="news-text02">
+								<p>世界各地的混亂，是我們當下每日生活必須面對的課題。
+								—《The New York Times Magazine》</p>
+							</div>
+							<div class="news-text03">
+								FEATURE 雜誌</br>
+								每一本新雜誌的誕生，</br>都代表着一個世代觀點的轉換，</br>	一個新的運作架構，</br>
+								<a href="article.html" target="_blank">繼續閱讀</a>
+							</div>					
+						</div>
+					</div>
+				</div>
+				<div id="home-magz clearfix">
+					<div class="title-line">
+						<div class="title"><a href="article.html" target="_blank">大誌雜誌</a></div>
+					</div>
+					<div class="magz01">
+						<div class="magz"><a href="text.html"><img src="images/i65-cover.jpg" alt=""></a>
+							<div class="magz-item">第六十五期（2015.8.1）</div>
+							<p>世界各地的混亂，是我們當下每日生活必須面對的課題。—《The New York Magazine》</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i64-cover.jpg" alt=""></a>
+							<div class="magz-item">第六十四期（2015.7.1）</div>
+							<p>在一個充滿欺騙的時代，説實話就是革命。—《陰松林》</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i63-cover.jpg" alt=""></a>
+							<div class="magz-item">第六十三期（2015.6.1）</div>
+							<p>只有山活得夠久，可以客觀地聆聽狼的嘷叫。—《沙郡年記》奧爾多．李奧帕德</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i62-cover.jpg" alt=""></a>
+							<div class="magz-item">第六十二期（2015.5.1）</div>
+							<p>「每個人都希望被找到。」—《愛情不用翻譯</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i61-cover.jpg" alt=""></a>
+							<div class="magz-item">第六十一期（2015.4.1)</div>
+							<p>「你當上了牠們的國王，矯正了一切。好，那麼寂寞呢？」 —《野獸冒險樂園》</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i60-cover.jpg" alt=""></a>
+							<div class="magz-item">第六十期（2015.3.1）</div>
+							<p>沒有人能掌握風與北美馴鹿的行蹤。 — 印第安人古諺 星野道夫</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i59-cover.jpg" alt=""></a>
+							<div class="magz-item">第五十九期（2015.2.1）</div>
+							<p>一千個人當中大概 會有兩個吧。—〈有些人喜歡詩〉</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i58-cover.jpg" alt=""></a>
+							<div class="magz-item">第五十八期（2015.1.1）</div>
+							<p>「有音樂我們才不會忘記」「忘記什麼？」—《刺激1995》</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i56-cover.jpg" alt=""></a>
+							<div class="magz-item">第五十六期（2014.12.1）</div>
+							<p>「得到水丸君配畫的我的文章，是相當幸運的文章。」— 村上春樹 談 安西水丸</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i55-cover.jpg" alt=""></a>
+							<div class="magz-item">第五十五期（2014.11.1）</div>
+							<p>「他們幾乎用一種健康的態度來鄙視所有事物。」— Richard Lester</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i54-cover.jpg" alt=""></a>
+							<div class="magz-item">第五十四期（2014.10.1）</div>
+							<p>「真正重要的東西，用眼睛是看不到的。」—《小王子》安東尼．聖修伯里</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i53-cover.jpg" alt=""></a>
+							<div class="magz-item">第五十三期（2014.9.1）</div>
+							<p>「這世界會打擊每一個人。但經歷過後，許多人會在受傷的地方變得更強壯。」— 海明威</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i52-cover.jpg" alt=""></a>
+							<div class="magz-item">第五十二期（2014.8.1）</div>
+							<p>「從太空船的窗框後隨意往外看，到處都是奇景。」—《太空人的地球生活指南》克里斯．哈德菲爾</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i51-cover.jpg" alt=""></a>
+							<div class="magz-item">第五十一期（2014.7.1）</div>
+							<p>每一個高中生，都是一頭溫厚的獸。</p>
+						</div>
+						<div class="magz"><a href="text.html"><img src="images/i57-cover.jpg" alt=""></a>
+							<div class="magz-item">第五十期（2014.6.1)</div>
+							<p>「別溫馴地步入那美好的夜。」— Dylan Thomas</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fix-width clearfix">
+			<div class="fis-width">
+				<div id="event">
+					<div class="title-line-right">
+						<div class="title-right">大誌推薦</div>
+						<a href="http://nettuesday.tw/" target="_blank"><img src="images/right-side/event.jpg"></a>
+					</div>
+				</div>
+				<div id="public">
+					<div class="title-line-right">
+						<div class="title-right">活動推薦</div>
+						<a href="http://2013bestinput.pts.org.tw/" target="_blank"><img src="images/right-side/public.png"></a>
+					</div>
+				</div>
+				<div id="volunteer">
+					<div class="title-line-right">
+						<div class="title-right">志工招募</div>
+						<a href="volunteer.html" ><img src="images/right-side/volunteer.jpg"></a>
+					</div>
+				</div>
+				<div id="facebook">
+					<div class="title-line-right">
+						<div class="title-right">facebook</div>
+						<div class="fb-page" data-href="https://www.facebook.com/bigissue.tw?fref=ts" data-width="260" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bigissue.tw?fref=ts"><a href="https://www.facebook.com/bigissue.tw?fref=ts">The Big Issue Taiwan</a></blockquote></div></div>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="full-width" id="footer">
+			<div class="fix-width" id="footer-word">
+				<div class="footer-left">
+					&copy;版權所有：大智文創 </br>
+					設計 : 陳冠妤 </br>
+					Design : yuyuchen test </br>
+					Drupal theme by RussianWebStudio.com 
+				</div>
+				<div class="footer-right">
+					一本屬於愚人世代的雜誌「大智雜誌中文版」，這是一本給流浪在街頭的人們所販售的刊物，透過一個可以自我實現的機會，重新長或生活的主導權。每本售價100元。50元為街頭販售者的收入。
+				</div>
+			</div>
+		</div>
+		<a href="javascript:;" id="go-top"></a>
+
+
+	</body>
+	</html>	

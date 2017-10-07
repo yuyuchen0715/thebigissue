@@ -1,0 +1,750 @@
+
+/*global*//*所謂的全域*/
+h1,h2,h3,h4,h5,h6,p,body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "微軟正黑體"
+		}
+img{
+	border:0;
+		}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/*螢幕比例*/
+.full-width{
+	width:100%;
+}
+.fix-width{
+	width: 1100px;
+	margin: auto;
+}
+.fiv-width{
+	width: 800px;
+	float: left;
+	padding-right: 20px;
+	margin-bottom: 30px;
+}
+.fis-width{
+	width: 260px;
+	float: right;
+	margin-top:5px;
+}
+
+
+/*title*/
+.title{
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.title-line{
+	margin-top: 5px;
+	margin-bottom: 20px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #EBEBEB;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	width: 800px;
+	float: left;
+}
+.title-line a{
+	text-decoration: none;
+	color: #222;
+}
+
+
+/*title-right*/
+.title-right{
+	margin-bottom: 20px;
+	margin-left: 20px;
+	font-size: 18px;
+}
+.title-line-right{
+	width: 260px;
+	height: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	line-height: 30px;
+	background-color: #EBEBEB;
+}
+.title-line-right a{
+	transition: opacity .5s;
+	opacity: 1;
+}
+.title-line-right a:hover{
+	opacity: .5;
+}
+
+
+/*刊頭*/
+.red{
+	width: 100%;
+	height: 20px;
+	background-color: #E61100;
+	animation:animate 1s ;
+	/*動畫速率有linear/in/out/in-out*/
+	/*in和out的意思是進場的快慢*/
+}
+@keyframes animate{
+	from {height: 0px;}
+	to{height: 20px;}
+}
+#header{
+	padding-top: 20px;
+	height: 150px;
+/*	background-color: #F7B267;*/
+}
+
+
+
+
+/*logo*/
+#logo{
+	height: 200px;
+	width: 200px;
+	float: left;
+}
+/*表單*/
+#nav{
+	float: right;
+	margin-left: 70px;
+	margin-top: 60px;
+}
+#nav ul{
+	height: 40px;
+}
+#nav ul li{
+	list-style-type: none;
+	float: left;
+	margin-left: 6px;
+	width: 105px;
+	height:45px;
+	line-height: 50px;
+	text-align: center;
+	display: block;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+#nav ul li:hover{
+	border-bottom: 2px solid #E61100;
+	border-top: 2px solid #E61100;
+}
+#nav ul li a{
+	text-decoration: none;
+	color: #232226;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+/*about*/
+#about{
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#about-title{
+	margin-top: 30px;
+	border-bottom: 1px dotted #ddd;
+	padding-bottom: 10px;
+}
+.about-text{
+	border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+.about-text01{
+	margin-top: 20px;
+	margin-left: 10px;
+	font-size: 16px;
+	line-height: 1.7em;
+	float: left;
+	width: 480px;
+}
+.about-text01 p{
+	margin-top: 10px;
+}
+.about-text02{
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 1.7em;
+	float: left;
+	width: 700px;
+}
+.about-text02 p{
+	margin-top: 10px;
+}
+.about-img01{
+	margin-top: 60px;
+	margin-right: 10px;
+	float: right;
+	padding-top: 5px;
+}
+.about-text-title{
+	padding-bottom: 5px;
+	font-size: 17px;
+	color:#E44444;
+	border-bottom: 1px dashed #ccc;
+}
+
+
+
+
+
+
+
+
+/*text*/
+#text{
+	float: left;
+}
+.news-item{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+	height: 230px;
+	float: left;
+}
+.news-img{
+	float: left;
+	width: 284px;
+}
+.news-img a{
+	 transition: opacity .6s;
+}
+
+.news-img a:hover{
+	 opacity: 0.4;
+}
+.news-text{
+	float: left;
+	width: 400px;
+	margin-left: 50px;
+	line-height: 1.6em;
+}
+.news-text01{
+	font-size: 20px;
+}
+.news-text02{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 14px;
+}
+.news-text03{
+	margin-top: 10px;
+	padding-top: 4px;
+	padding-bottom: 10px;
+	border-top: 1px solid #EBEBEB;
+}
+.news-text03 a{
+	margin-top: 10px;
+	display: block;
+	width: 80px;
+	height: 25px;
+	background-color: rgba(0,0,0,.1);
+	text-decoration: none;
+	text-align: center;
+	line-height: 25px;
+	color: #000;
+	font-size: 14px;
+	transition:all .6s;
+}
+.news-text03 a:hover{
+	background-color: #ccc;
+	width: 85px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	letter-spacing: 0.1em;
+}
+
+
+
+
+
+/*article*/
+
+#article{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.article-title-one{
+	width: 8px;
+	height: 25px;
+	display: block;
+	background-color: #555;
+	float: left;
+	margin-right: 10px;
+	transition:all .3s;
+}
+.article-title-one:hover{
+	background-color: #ddd;
+}
+.article-title-two{
+	font-size: 18px;
+}
+.article-title-three{
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+}
+.article-text{
+	padding-top: 10px;
+	margin-top: 10px;
+	width: 760px;
+}
+.article-text{
+	text-align: center;
+	margin-top: 30px;
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+}
+.article-text01{
+	width: 700px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: #ddd;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: 30px;
+	font-size:18px;
+	font-style: italic;
+	text-align: center;
+}
+.article-text02{
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 40px;
+	line-height: 1.6em;
+	text-align: left;
+}
+.article-text03{
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 60px;
+	line-height: 1.6em;
+	text-align: left;
+}
+.article-text-img{
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+
+
+
+
+
+/*雜誌訂閱*/
+#magz{
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.magz-text{
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	margin-top: 15px;
+}
+#magz-text01{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 2px;
+	padding-bottom: 15px;
+	line-height: 1.5em;
+}
+#magz-text01 p{
+	padding-top: 5px;
+	margin-top: 25px;
+	line-height: 1.5em;
+}
+#magz-text02{
+	margin-top: 10px;
+}
+#magz-text03{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 5px;
+	margin-right: 20px;
+	line-height: 1.5em;
+	font-size: 18px;
+	background-color: rgba(0,0,0,.1);
+	border-radius: 3px;
+	transition:all .3s;
+}
+#magz-text03:hover{
+	background-color: rgba(0,0,0,.2);
+
+}
+#magz-text03-1{
+	margin-top: 10px;
+}
+#magz-text03-2{
+	margin-bottom: 20px;
+	margin-left: 1px;
+	margin-right: 20px;
+	font-size: 16px;
+	line-height: 1.6em;
+}
+#magz-text04{
+	margin-top: 20px;
+}
+#magz-text04 a{
+	text-decoration: none;
+	color: #32687D;
+}
+#magz-text04 a:hover{
+	text-decoration: none;
+	color: #DCD1D1;
+}
+#magz-text05{
+	padding-top: 40px;
+	line-height: 1.7em;
+}
+#magz-text05 p{
+	margin-top: 10px;
+	padding-left: 10px;
+	margin-top: 5px;
+	border-left: 2px solid #ccc;
+
+}
+#magz-text05 a{
+	text-decoration: none;
+	color: #32687D;
+}
+#magz-text05 a:hover{
+	text-decoration: none;
+	color: #DCD1D1;
+}
+
+
+
+
+
+
+
+/*合作單位*/
+#cooperate-title{
+	margin-top: 30px;
+	border-bottom: 1px dotted #ddd;
+	padding-bottom: 10px;
+}
+.cooperate-img{
+	float: left;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+ul.img-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul.img-list li {
+	display: inline-block;
+	height: 180px;
+	margin: 3% 4%;
+	position: relative;
+	width: 180px;
+}
+span.text-content {
+	background: rgba(0,0,0,.7);
+	color: white;
+	cursor: pointer;
+	display: table;
+	height: 180px;
+	left: 0;
+	top: 0;
+	width: 180px;
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+span.text-content span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	padding: 0 20px;
+}
+ul.img-list li:hover span.text-content {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+/*聯絡我們*/
+#contact{
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#contact-title{
+	margin-top: 30px;
+	border-bottom: 1px dotted #ddd;
+	padding-bottom: 10px;
+}
+.contact-img{
+	background-image: url(images/contact01.jpg);
+	background-repeat: no-repeat;
+	height: 400px;
+	margin-bottom: 20px;
+}
+#contact-text{
+	margin-left: 10px;
+	font-size: 18px;
+	line-height: 1.7em;
+	border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+.contact-form{
+	padding-bottom: 5px;
+}
+.contact-form label{
+    display: block;
+    font-size: 16px;
+    letter-spacing: .2em;
+}
+.contact-form textarea{
+    width: 340px;
+    height: 160px;
+}
+
+
+
+
+/*右邊欄位*/
+
+
+
+/*右邊欄位 文章*/
+#block-text{
+	margin-bottom: 40px;
+}
+.block-text-month{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #aaa;
+}
+.block-text-month p a{
+	border-left: 3px solid #bbb;
+	padding-left: 10px;
+	margin-left: 20px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #222;
+	line-height: 1.8em;
+}
+.block-text-month ul {
+	margin-top: 10px;
+	color: #aaa;
+	text-decoration: none;
+	padding-bottom: 3px;
+}
+
+.block-text-month ul li{
+	list-style-type: none;
+	display: block;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+}
+.block-text-month ul a{
+	display: block;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	text-decoration: none;
+	font-size: 17px;
+	color: #222;
+}
+.block-text-month ul li a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #333;
+	padding-left: 8px;
+}
+.block-text-month ul a:hover{
+	color: #aaa;
+}
+
+
+/*大誌推薦*/
+#event{
+	height: 280px;
+	margin-bottom: 20px;
+}
+#event img{
+	width: 260px;
+	padding-bottom: 20px;
+}
+
+
+/*活動推薦*/
+#public{
+	height: 280px;
+	margin-bottom: 30px;
+}
+#public img{
+	width: 260px;
+	padding-bottom: 20px;
+}
+
+
+/*志工招募*/
+#volunteer{
+	height: 280px;
+	padding-bottom: 20px;
+}
+#volunteer img{
+	height: 230px;
+	width: 260px;
+	margin-bottom: 100px;
+
+}
+
+
+
+
+
+/*志工招募*/
+#volunteer01{
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 1000px;
+}
+#volunteer-title{
+	margin-top: 30px;
+	border-bottom: 1px dotted #ddd;
+	padding-bottom: 10px;
+}
+#volunteer-text{
+	margin-top: 20px;
+	margin-left: 10px;
+	font-size: 18px;
+	line-height: 1.6em;
+}
+#volunteer-text01{
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ccc; 
+}
+#volunteer-text02{
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+
+/*志工招募*/
+#volunteer{
+	height: 280px;
+	padding-bottom: 20px;
+}
+#volunteer img{
+	height: 230px;
+	width: 260px;
+	margin-bottom: 100px;
+}
+
+
+/*facebook*/
+#facebook{
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+
+
+
+
+/*footer*/
+
+#footer{
+	background-color: #ccc;
+	height: 200px;
+}
+#footer-word{
+	padding-top: 50px;
+	line-height: 1.6em;
+}
+.footer-left{
+	margin-left: 10px;
+	width: 400px;
+	height: 130px;
+	float: left;
+}
+.footer-right{
+	border-left: 1px dotted #000;
+	padding-left: 80px;
+	margin-left: 50px;
+	width: 400px;
+	float: left;
+	height: 100px;
+}
+
+#go-top{
+    position: fixed;
+    display: block;
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+	text-decoration: none;
+    background: url(http://www.storm.mg/assets/icon_top-a20fa7ee97bbb3bf8dab4cebf62ad111.png);
+    background-repeat: no-repeat;
+    transition:.5s;
+    opacity: .7;
+}
+#go-top:hover{
+	opacity: .3;
+}

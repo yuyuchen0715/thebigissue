@@ -1,0 +1,405 @@
+			
+
+/*global*//*所謂的全域*/
+h1,h2,h3,h4,h5,h6,p,body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Tahoma","微軟正黑體";
+	color: #191818;
+}
+img{
+	border:0;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+
+
+/*螢幕比例*/
+.full-width{
+	width:100%;
+}
+.fix-width{
+	width: 1100px;
+	margin: auto;
+}
+.fiv-width{
+	width: 800px;
+	float: left;
+	padding-right: 20px;
+	margin-bottom: 30px;
+}
+.fis-width{
+	width: 260px;
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+/*title*/
+.title{
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.title-line{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #EBEBEB;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	width: 800px;
+	float: left;
+}
+.title a{
+	text-decoration: none;
+	color: #222;
+}
+
+
+/*title-right*/
+.title-right{
+	margin-bottom: 20px;
+	margin-left: 20px;
+	font-size: 18px;
+}
+.title-line-right{
+	width: 260px;
+	height: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	line-height: 30px;
+	background-color: #EBEBEB;
+}
+.title-line-right a{
+	transition: opacity .5s;
+	opacity: 1;
+}
+.title-line-right a:hover{
+	opacity: .5;
+}
+
+
+
+/*刊頭*/
+.red{
+	width: 100%;
+	height: 20px;
+	background-color: #E61100;
+	animation:animate 1s ;
+	/*動畫速率有linear/in/out/in-out*/
+	/*in和out的意思是進場的快慢*/
+}
+@keyframes animate{
+	from {height: 0px;}
+	to{height: 20px;}
+}
+
+#header{
+	padding-top: 20px;
+	height: 150px;
+/*	background-color: #F7B267;*/
+}
+
+
+
+/*logo*/
+#logo{
+	height: 200px;
+	width: 200px;
+	float: left;
+}
+/*表單*/
+#nav{
+	float: right;
+	margin-left: 70px;
+	margin-top: 60px;
+}
+#nav ul{
+	height: 40px;
+}
+#nav ul li{
+	list-style-type: none;
+	float: left;
+	margin-left: 6px;
+	width: 105px;
+	height:45px;
+	line-height: 50px;
+	text-align: center;
+	display: block;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+#nav ul li:hover{
+	border-bottom: 2px solid #E61100;
+	border-top: 2px solid #E61100;
+}
+#nav ul li a{
+	text-decoration: none;
+	color: #232226;
+	font-size: 16px;
+}
+
+
+
+
+/*大圖*/
+#img-photo{
+	padding-top: 5px;
+	padding-bottom: 30px;
+	height: 600px;
+	width: 1100px;
+	position: relative;
+	background-size: cover;
+}
+#cycle{
+	height: 600px;
+	width: 1100px;
+	position: relative;
+}
+#cycle_nav{
+	position: absolute;
+	margin-top: 365px;
+	z-index: 5555;
+	width: 600px;
+	left: 450px;
+}
+#cycle_nav a{
+	display: inline-block;
+	/*float: left;*/
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,.5);
+	text-decoration: none;
+	line-height: 15px;
+	margin-top: 190px;
+	margin-left: 10px;
+	font-size:0;
+	text-align: center;
+}
+#cycle_nav .activeSlide{
+	background-color: red;
+	transition:all 0.7s;
+}
+
+
+/*最新消息雜誌*/
+.news{
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.news-item{
+	margin-bottom: 50px;
+	height: 210px;
+	float: left;
+}
+.news-img{
+	float: left;
+}
+.news-img a{
+	 transition: opacity .6s;
+}
+.news-img a:hover{
+	 opacity: 0.4;
+}
+.news-text{
+	float: left;
+	width: 400px;
+	margin-left: 50px;
+	line-height: 1.6em;
+}
+.news-text01{
+	font-size: 20px;
+}
+.news-text02{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 14px;
+}
+.news-text03{
+	margin-top: 7px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-top: 1px solid #EBEBEB;
+
+}
+.news-text03 a{
+	margin-top: 10px;
+	display: block;
+	width: 80px;
+	height: 25px;
+	background-color: rgba(0,0,0,.1);
+	text-decoration: none;
+	text-align: center;
+	line-height: 25px;
+	color: #000;
+	font-size: 14px;
+	transition:all .6s;
+}
+.news-text03 a:hover{
+	background-color: #ccc;
+	width: 85px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	letter-spacing: 0.1em;
+}
+
+
+/*雜誌購買*/
+.magz{
+	font-size: 18px;
+	width: 800px;
+    width: 31.3%;
+    /* background-color: #ccc; */
+    float: left;
+    margin: 0 1%;
+    position: relative;
+    z-index: 111;
+}
+.magz-item{
+	width: 200px;
+	height: 30px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 30px;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	z-index: 555;
+	top: 0px;
+	color: #fff;
+}
+.magz01{
+	float: left;
+}
+.magz p{
+  	font-size: 15px;
+  	width: 200px;
+  	margin-top: 5px;
+  	margin-bottom: 40px;
+  	border-top: 1px dotted #ccc;
+  	padding-top: 5px;
+}
+.magz p{
+  	font-size: 16px;
+  	width: 210px;
+  	margin-bottom: 30px;
+}
+.magz a{
+	transition: opacity .5s;
+	opacity: 1;
+}
+.magz a:hover{
+	opacity: 0.5;
+}
+
+
+
+
+
+/*右邊欄位*/
+
+/*大誌推薦*/
+#event{
+	height: 280px;
+	margin-bottom: 20px;
+}
+#event img{
+	width: 260px;
+	padding-bottom: 20px;
+}
+
+
+/*活動推薦*/
+#public{
+	height: 280px;
+	margin-bottom: 30px;
+}
+#public img{
+	width: 260px;
+	padding-bottom: 20px;
+}
+
+
+/*志工招募*/
+#volunteer{
+	height: 280px;
+	padding-bottom: 20px;
+}
+#volunteer img{
+	height: 230px;
+	width: 260px;
+	margin-bottom: 100px;
+}
+
+/*facebook*/
+#facebook{
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+
+
+
+
+/*footer*/
+#footer{
+	background-color: #ccc;
+	height: 200px;
+	width: 100%
+}
+#footer-word{
+	padding-top: 50px;
+	line-height: 1.6em;
+}
+.footer-left{
+	margin-left: 10px;
+	width: 400px;
+	height: 130px;
+	float: left;
+}
+.footer-right{
+	border-left: 1px dotted #000;
+	padding-left: 80px;
+	margin-left: 50px;
+	width: 400px;
+	float: left;
+	height: 100px;
+}
+
+#go-top{
+    position: fixed;
+    display: block;
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+	text-decoration: none;
+    background: url(http://www.storm.mg/assets/icon_top-a20fa7ee97bbb3bf8dab4cebf62ad111.png);
+    background-repeat: no-repeat;
+    transition:.5s;
+    opacity: .7;
+}
+#go-top :hover{
+	opacity: .5;
+}
+
+
+
+
+.lazy {
+  display: none;
+}

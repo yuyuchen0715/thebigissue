@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>The big issue Taiwan | 大誌台灣</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="other.css">
+		<script src="jquery/jquery.scrollTo.min.js"></script>
+   		<script src="jquery/jquery.localScroll.min.js"></script>
+   	 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".block-text-month  ul").hide();
+					$(".block-text-month p ").click(function(){
+						$(this).next().stop().fadeToggle();
+				});
+				$("#go-top").hide();
+	       		$(window).scroll(function(){
+    	        	if($(this).scrollTop()>250){
+        	    	$("#go-top").fadeIn();
+        	    	}else{
+        	    	$("#go-top").fadeOut();
+        	    	}
+        		});
+	        	$("#go-top").click(function(){
+           			$("html,body").animate({
+           			scrollTop:0
+            	},1000,"easeInOutBack");
+          		});
+			})
+		</script>
+	</head>
+	<body>
+		<div class="red"></div>
+		<div class="full-width clearfix" >
+			<div class="fix-width clearfix" id="header">
+				<div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">首頁</a></li>
+						<li><a href="about.html">關於大誌</a></li>
+						<li><a href="text.html">雜誌導覽</a></li>
+						<li><a href="magzine.html">雜誌訂閱</a></li>
+						<li><a href="cooperate.html">合作單位</a></li>
+						<li><a href="contact.html">聯絡我們</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="full-width clearfix">
+			<div class="fix-width">
+				<div class="fiv-width">
+					<div class="title-line">
+						<div class="title">雜誌訂閱</div>
+					</div>
+					<div id="magz">
+						<div class="article-title-one"></div>
+						<div id="magz-title">成為大誌雜誌的支持訂閱戶</div>
+						<div class="magz-text">
+							<div id="magz-text01">
+								<p>成為大誌雜誌的支持訂閱戶，您的組織可以藉此展現對於社會企業的支持，並且幫助我們把對於街友及弱勢族	群的召募、訓練、實習、支援等服務工作做的更好。</p>
+								<div id="magz-text02">目前我們參考了世界各國的Big Issue雜誌做法，開放一年份的企業/組織訂閱，並提供了3種的支持訂閱方式供您選擇：</div>
+							</div>
+							<div id="magz-text03">
+								<ul>
+								 	<li><div id="magz-text03-1">1. 每年 3000元（非盈利/教育機構 2500元 ）</div></li>
+									<div id="magz-text03-2"> → 您的組織每月可以收到一本當期的大誌雜誌，郵寄到您所指定的地址。</div>
+								</ul>	
+							</div>
+							<div id="magz-text03">
+								<ul>	
+									<li><div id="magz-text03-1">2. 每年 6000元（非盈利/教育機構 5000元 ）</div></li>
+									<div id="magz-text03-2"> → 您的組織將被視為TBI的支持訂閱戶，並且標誌在雜誌內頁的贊助單位中。此外，您每個月可以收到三本當期的大誌雜誌，同時，當您採購TBI雜誌的廣告時，將可以得到15％的折扣優惠。</div>
+								</ul>
+							</div>
+							<div id="magz-text03">
+								<ul>
+									<li><div id="magz-text03-1">3. 每年 12000 元（非盈利/教育機構 10000元）</div>
+									<div id="magz-text03-2"> → 您的組織將可以標誌在雜誌內頁的贊助單位中(可以使用名稱或Logo)，同時，您每個月可以收到五本當期的大誌雜誌，以及20％的廣告折扣。</div>
+								</ul>
+							</div>
+							<div id="magz-text04">
+							如果您想成為大誌雜誌的支持訂閱戶，請點選這裡，填寫<a href="http://www.bigissue.tw/subscriberform">大誌雜誌支持訂閱戶表單。</a>
+							</div>
+							<div id="magz-text05">
+								另外，您也可以透過這裡瞭解世界各地The Big Issue雜誌的支持、訂閱方式：</br>
+								<p><a href="http://www.bigissue.com/supporters" target="_blank">英國 The Big Issue 支持訂閱方案</a></p>
+								<p><a href="http://www.thebigissue.org.au/subscribe-or-renew/" target="_blank">澳洲 The Big Issue 支持訂閱方案</a></p>
+								<p><a href="http://www.bigissue.or.jp/support_ind/index.html" target="_blank">日本 The Big Issue 支持訂閱方案(企業) </a></p>
+								<p><a href="http://www.bigissue.or.jp/support_co/index.html" target="_blank">日本 The Big Issue 支持訂閱方案(企業)</a></p>	
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		
+		
+			<div class="fix-width clearfix">
+				<div class="fis-width ">
+					<div id="block-text">
+						<div class="title-line-right">
+							<div class="title-right">最新雜誌</div>
+						</div>
+						<div class="block-text-month">
+							<p><a href="javascript:;">2015年大誌</a></p>
+							<ul>
+								<li><a href="text.html">2015年 | 大誌總覽</a></li>
+								<li><a href="article.html">09月 | 第66期出刊</a></li>
+								<li><a href="article.html">08月 | 第65期出刊</a></li>
+								<li><a href="article.html">07月 | 第64期出刊</a></li>
+								<li><a href="article.html">06月 | 第63期出刊</a></li>
+								<li><a href="article.html">05月 | 第62期出刊</a></li>
+								<li><a href="article.html">04月 | 第61期出刊</a></li>
+								<li><a href="article.html">03月 | 第60期出刊</a></li>
+								<li><a href="article.html">02月 | 第59期出刊</a></li>
+								<li><a href="article.html">01月 | 第58期出刊</a></li>
+							</ul>
+							<p><a href="javascript:;">2014年大誌</a></p>
+							<ul>
+								<li><a href="text.html">2014年 | 大誌總覽</a></li>
+								<li><a href="article.html">12月 | 第57期出刊</a></li>
+								<li><a href="article.html">11月 | 第56期出刊</a></li>
+								<li><a href="article.html">10月 | 第55期出刊</a></li>
+								<li><a href="article.html">09月 | 第54期出刊</a></li>
+								<li><a href="article.html">08月 | 第53期出刊</a></li>
+								<li><a href="article.html">07月 | 第52期出刊</a></li>
+								<li><a href="article.html">06月 | 第51期出刊</a></li>
+								<li><a href="article.html">05月 | 第50期出刊</a></li>
+								<li><a href="article.html">04月 | 第49期出刊</a></li>
+								<li><a href="article.html">03月 | 第48期出刊</a></li>
+								<li><a href="article.html">02月 | 第47期出刊</a></li>
+								<li><a href="article.html">01月 | 第46期出刊</a></li>
+							</ul>
+							<p><a href="javascript:;">2013年大誌</a></p>
+							<ul>
+								<li><a href="text.html">2013年 | 大誌總覽</a></li>
+								<li><a href="article.html">12月 | 第45期出刊</a></li>
+								<li><a href="article.html">11月 | 第44期出刊</a></li>
+								<li><a href="article.html">10月 | 第43期出刊</a></li>
+								<li><a href="article.html">09月 | 第42期出刊</a></li>
+								<li><a href="article.html">08月 | 第41期出刊</a></li>
+								<li><a href="article.html">07月 | 第40期出刊</a></li>
+								<li><a href="article.html">06月 | 第39期出刊</a></li>
+								<li><a href="article.html">05月 | 第38期出刊</a></li>
+								<li><a href="article.html">04月 | 第37期出刊</a></li>
+								<li><a href="article.html">03月 | 第36期出刊</a></li>
+								<li><a href="article.html">02月 | 第35期出刊</a></li>
+								<li><a href="article.html">01月 | 第34期出刊</a></li>
+							</ul>
+							<p><a href="javascript:;">2012年大誌</a></p>
+							<ul>
+								<li><a href="text.html">2012年 | 大誌總覽</a></li>
+								<li><a href="article.html">12月 | 第33期出刊</a></li>
+								<li><a href="article.html">11月 | 第32期出刊</a></li>
+								<li><a href="article.html">10月 | 第31期出刊</a></li>
+								<li><a href="article.html">09月 | 第30期出刊</a></li>
+								<li><a href="article.html">08月 | 第29期出刊</a></li>
+								<li><a href="article.html">07月 | 第28期出刊</a></li>
+								<li><a href="article.html">06月 | 第27期出刊</a></li>
+								<li><a href="article.html">05月 | 第26期出刊</a></li>
+								<li><a href="article.html">04月 | 第25期出刊</a></li>
+								<li><a href="article.html">03月 | 第24期出刊</a></li>
+								<li><a href="article.html">02月 | 第23期出刊</a></li>
+								<li><a href="article.html">01月 | 第22期出刊</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="event">
+						<div class="title-line-right">
+							<div class="title-right">大誌推薦</div>
+							<a href="http://nettuesday.tw/" target="_blank"><img src="images/right-side/event.jpg"></a>
+						</div>
+					</div>
+					<div id="public">
+						<div class="title-line-right">
+							<div class="title-right">活動推薦</div>
+							<a href="http://2013bestinput.pts.org.tw/" target="_blank"><img src="images/right-side/public.png"></a>
+						</div>
+					</div>
+					<div id="volunteer">
+						<div class="title-line-right">
+							<div class="title-right">志工招募</div>
+							<a href="volunteer.html"><img src="images/right-side/volunteer.jpg"></a>
+						</div>
+					</div>
+					<div id="facebook">
+						<div class="title-line-right">
+							<div class="title-right">facebook</div>
+							<div class="fb-page" data-href="https://www.facebook.com/bigissue.tw?fref=ts" data-width="260" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bigissue.tw?fref=ts"><a href="https://www.facebook.com/bigissue.tw?fref=ts">The Big Issue Taiwan</a></blockquote></div></div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="full-width" id="footer">
+			<div class="fix-width" id="footer-word">
+				<div class="footer-left">
+					&copy;版權所有：大智文創 </br>
+					設計 : 陳冠妤 </br>
+					Design : yuyuchen test </br>
+					Drupal theme by RussianWebStudio.com 
+				</div>
+				<div class="footer-right">
+					一本屬於愚人世代的雜誌「大智雜誌中文版」，這是一本給流浪在街頭的人們所販售的刊物，透過一個可以自食其力的機會，重新長或生活的主導權。每本售價100元。50元為街頭販售者的收入。
+				</div>
+			</div>
+		</div>
+		<a href="javascript:;" id="go-top"></a>		
+	</body>
+	</html>	
